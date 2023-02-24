@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Product Details View Controller-->
+        <scene sceneID="qNk-WR-ngS">
+            <objects>
+                <viewController storyboardIdentifier="ProductDetailsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="XHU-PP-rYj" customClass="ProductDetailsViewController" customModule="ProductCard" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yQc-qY-1uU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wrq-jU-735">
+                                <rect key="frame" x="0.0" y="280" width="414" height="582"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <inset key="scrollIndicatorInsets" minX="-1" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </tableView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="U5g-gf-Idg">
+                                <rect key="frame" x="18" y="62" width="378" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="ljc-NV-8H0"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="9qt-EM-H4e"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="wrq-jU-735" firstAttribute="top" secondItem="U5g-gf-Idg" secondAttribute="bottom" constant="18" id="6lr-9W-U0S"/>
+                            <constraint firstItem="U5g-gf-Idg" firstAttribute="leading" secondItem="9qt-EM-H4e" secondAttribute="leading" constant="18" id="E7c-xN-a3x"/>
+                            <constraint firstItem="9qt-EM-H4e" firstAttribute="bottom" secondItem="wrq-jU-735" secondAttribute="bottom" id="abh-WR-QNm"/>
+                            <constraint firstItem="wrq-jU-735" firstAttribute="leading" secondItem="9qt-EM-H4e" secondAttribute="leading" id="b7P-aD-v69"/>
+                            <constraint firstItem="9qt-EM-H4e" firstAttribute="trailing" secondItem="wrq-jU-735" secondAttribute="trailing" id="bAg-VR-ETA"/>
+                            <constraint firstItem="U5g-gf-Idg" firstAttribute="top" secondItem="9qt-EM-H4e" secondAttribute="top" constant="18" id="or4-iX-AE8"/>
+                            <constraint firstItem="9qt-EM-H4e" firstAttribute="trailing" secondItem="U5g-gf-Idg" secondAttribute="trailing" constant="18" id="pVk-ox-dxu"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageProduct" destination="U5g-gf-Idg" id="eip-n4-9PW"/>
+                        <outlet property="tableview" destination="wrq-jU-735" id="g5h-r3-brh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1X1-Vh-Tgq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="582.60869565217399" y="15.401785714285714"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
